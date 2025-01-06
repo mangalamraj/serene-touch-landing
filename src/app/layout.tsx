@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import "./globals.css";
 import Navbar from "@/components/common/navbar";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,6 +24,17 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
+          <div className=" w-screen h-full fixed -z-20 dark:opacity-35">
+            <SparklesCore
+              id="tsparticlesfullpage"
+              background="transparent"
+              minSize={0.6}
+              maxSize={1.4}
+              particleDensity={100}
+              className="w-full h-full"
+              particleColor="#FFFFFF"
+            />
+          </div>
           {children}
         </ThemeProvider>
       </body>

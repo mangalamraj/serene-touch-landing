@@ -5,23 +5,11 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import heroImage from "../../../public/hero.svg";
 import rightdown from "../../../public/right-down.png";
-import { SparklesCore } from "../ui/sparkles";
 import "./style.css";
 
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center md:mt-40 mt-20">
-      <div className="absolute w-screen h-screen -z-20 dark:opacity-35">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>
       <main className="container mx-auto flex flex-col gap-8 px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-8">
           <div className="flex flex-col gap-2 z-10 w-full md:w-1/2">
@@ -35,9 +23,12 @@ const Hero = () => {
             </h1>
             <div className="text-lg md:text-2xl text-gray-500 font-medium">
               Streamline Appointments, Records, and Care <br />
-              in One Powerful Platform
+              in{" "}
+              <p className="dark:text-white text-black inline ">
+                One Powerful Platform{" "}
+              </p>
             </div>
-            <div className="flex gap-4 items-center mt-1 relative ">
+            <div className="flex gap-4 items-center mt-8 relative ">
               <Button className={cn("md:py-6 md:px-6")}>
                 <Link
                   href="/appointments"
