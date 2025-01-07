@@ -19,6 +19,8 @@ export function BentoGridSecondDemo() {
           header={item.header}
           className={item.className}
           icon={item.icon}
+          img={item.img}
+          textReveal={item.textReveal}
         />
       ))}
     </BentoGrid>
@@ -29,32 +31,39 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "Manage Queues Like Never Before",
+    description:
+      "Revolutionize your workflow with efficient queue management, saving time and enhancing productivity.",
     header: <Skeleton />,
     className: "md:col-span-2",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    img: "/queue.png",
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "Store Patients Vitals and History",
+    description:
+      "Securely track and maintain comprehensive patient records, ensuring seamless healthcare delivery.",
     header: <Skeleton />,
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    img: "/vitals.png",
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Connect With Your Website.",
+    description:
+      "Seamlessly integrate your services with your website, enhancing user engagement and connectivity.",
     header: <Skeleton />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    img: "/website.jpeg",
   },
   {
-    title: "The Power of Communication",
+    title: "Generate Prescription (Coming Soon...)",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "Simplify the prescription process with an intuitive tool designed for precision and ease.",
     header: <Skeleton />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    textReveal: true,
   },
 ];
