@@ -19,59 +19,60 @@ export function FaqComponent() {
       </div>
       <div className="md:text-lg text-[#a1a1aa] md:mb-8">
         Get the Answers You Need: Your Guide to Our{" "}
-        <p className="dark:text-white text-black inline ">Chatbot Solutions </p>
+        <p className="dark:text-white text-black inline">
+          Patient Management Platform
+        </p>
       </div>
       <div className="flex w-full justify-center text-left">
         <Accordion type="single" collapsible className="w-[800px]">
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-left">
-              What makes your chatbot solutions different from others?
+              What features does the patient management platform offer?
             </AccordionTrigger>
             <AccordionContent>
-              Our chatbot solutions are powered by advanced AI, offering
-              personalized interactions, seamless integrations, and continuous
-              learning capabilities to improve customer experience over time.
+              Our platform offers appointment scheduling, patient record
+              management, communication tools, and analytics to streamline your
+              operations and improve patient care.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-left">
-              How easy is it to integrate your chatbot with our existing
-              systems?
+              Is the platform secure for storing patient data?
             </AccordionTrigger>
             <AccordionContent>
-              Integration is simple and straightforward. Our chatbots are
-              designed to work seamlessly with a wide range of platforms,
-              including websites, mobile apps, and popular messaging services.
+              Yes, the platform complies with all necessary security standards,
+              including HIPAA, to ensure the confidentiality and safety of
+              patient data.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-left">
-              Can the chatbot be customized to match our brands voice and style?
+              Can the platform be customized for my practices needs?
             </AccordionTrigger>
             <AccordionContent>
-              Absolutely! Our chatbots can be fully customized to reflect your
-              brands tone, style, and visual identity, ensuring a consistent
-              user experience across all touchpoints.
+              Absolutely! Our platform is fully customizable, allowing you to
+              tailor features, workflows, and the user interface to meet your
+              practices specific requirements.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger className="text-left">
-              Is the chatbot capable of handling multiple languages?
+              Does the platform support integration with existing systems?
             </AccordionTrigger>
             <AccordionContent>
-              Yes, our chatbot solutions support multiple languages, making it
-              easy to engage with a global audience and provide localized
-              experiences.
+              Yes, the platform supports seamless integration with your existing
+              systems, including EHR/EMR systems, billing software, and
+              communication tools.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
             <AccordionTrigger className="text-left">
-              What kind of support do you offer post-deployment?
+              How can I ensure my staff is trained to use the platform?
             </AccordionTrigger>
             <AccordionContent>
-              We provide ongoing support, including updates, performance
-              monitoring, and troubleshooting, to ensure your chatbot continues
-              to perform at its best.
+              We provide comprehensive training and ongoing support to ensure
+              your staff can effectively use the platform and maximize its
+              potential.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

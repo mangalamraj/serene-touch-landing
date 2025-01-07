@@ -1,4 +1,6 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { TextRevealCard } from "./text-reveal-card";
 
 export const BentoGrid = ({
   className,
@@ -18,19 +20,21 @@ export const BentoGrid = ({
     </div>
   );
 };
-
 export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
   icon,
+  img,
+  textReveal,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
+  img?: string;
+  textReveal?: boolean;
 }) => {
   return (
     <div
@@ -39,7 +43,22 @@ export const BentoGridItem = ({
         className,
       )}
     >
-      {header}
+      {textReveal && (
+        <TextRevealCard
+          text="Coming Soon"
+          revealText="Coming Soon"
+        ></TextRevealCard>
+      )}
+      {img && (
+        <div className="relative w-full md:h-80 rounded-md">
+          <Image
+            src={img}
+            alt={typeof title === "string" ? title : "Image"}
+            className="object-fill rounded-md"
+            fill
+          />
+        </div>
+      )}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {icon}
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
