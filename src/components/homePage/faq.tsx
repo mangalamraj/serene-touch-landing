@@ -8,7 +8,10 @@ import { Badge } from "../ui/badge";
 
 export function FaqComponent() {
   return (
-    <div className="container text-center flex flex-col gap-2 md:gap-0">
+    <div
+      className="container md:text-center flex flex-col gap-2 md:gap-0"
+      id="faq"
+    >
       <div className="mb-4">
         <Badge variant="outline" className="text-sm md:px-4 md:py-1">
           Faq

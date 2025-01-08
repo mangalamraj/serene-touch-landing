@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { ModeToggle } from "./modeToggler";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -20,13 +21,20 @@ const Navbar = () => {
               Try Now <ArrowUpRight />
             </Button>
             <Button variant={"ghost"} className={cn("font-bold text-base")}>
-              Contact Us
+              <Link to="contact" smooth>
+                {" "}
+                Contact Us
+              </Link>
             </Button>
             <Button variant={"ghost"} className={cn("font-bold text-base")}>
-              Features
+              <Link to="feature" smooth>
+                Features
+              </Link>
             </Button>
             <Button variant={"ghost"} className={cn("font-bold text-base")}>
-              Faqs
+              <Link to="faq" smooth>
+                Faqs
+              </Link>
             </Button>
           </div>
         </div>

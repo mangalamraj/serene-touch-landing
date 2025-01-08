@@ -20,12 +20,12 @@ const Footer = () => {
               </Link>
             </Button>
             <Button variant={"ghost"} className="text-base">
-              <Link to="features" smooth duration={500} offset={-150}>
-                Features
+              <Link to="faq" smooth duration={500} offset={-150}>
+                Faq
               </Link>
             </Button>
             <Button variant={"ghost"} className="text-base">
-              <Link to="features" smooth duration={500} offset={-150}>
+              <Link to="contact" smooth duration={500} offset={-150}>
                 Contact
               </Link>
             </Button>

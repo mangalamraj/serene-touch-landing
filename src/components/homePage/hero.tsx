@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
@@ -30,13 +29,8 @@ const Hero = () => {
             </div>
             <div className="flex gap-4 items-center mt-8 relative ">
               <Button className={cn("md:py-6 md:px-6")}>
-                <Link
-                  href="/appointments"
-                  className="font-normal text-sm md:text-sm flex items-center gap-2"
-                >
-                  Try Now
-                  <ArrowUpRight />
-                </Link>
+                Try Now
+                <ArrowUpRight />
               </Button>
               <div className="absolute left-28 md:left-36 top-4  md:top-8 hidden md:block">
                 <Image
