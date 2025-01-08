@@ -1,4 +1,5 @@
 import Footer from "@/components/common/footer/footer";
+import ContactUsCta from "@/components/homePage/contactUsCTA";
 import { FaqComponent } from "@/components/homePage/faq";
 import Features from "@/components/homePage/features";
 import Hero from "@/components/homePage/hero";
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Features />
       <FaqComponent />
+      <ContactUsCta />
       <Footer />
     </div>
   );
