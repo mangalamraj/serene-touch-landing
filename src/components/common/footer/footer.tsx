@@ -8,8 +8,8 @@ const Footer = () => {
     <div className="dark:bg-black">
       <div className=" text-center flex flex-col items-center ">
         <Separator className="w-full" />
-        <div className="font-semibold flex items-center justify-center text-xl md:text-2xl gap-2 md:mt-20 mt-10 mb-10">
-          <span className="text-3xl">⚕️</span>
+        <div className="font-semibold flex items-center justify-center text-xl md:text-2xl md:gap-2 gap-1 md:mt-20 mt-10 mb-10">
+          <span className="md:text-3xl text-2xl">⚕️</span>
           SereneTouch
         </div>
         <div>
