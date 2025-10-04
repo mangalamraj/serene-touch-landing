@@ -11,7 +11,7 @@ const Features = () => {
           </Badge>
         </div>
         <div className="container md:text-4xl text-2xl font-semibold flex md:justify-center">
-          Features
+          We love to offer
         </div>
         <div className="text-gray-500 text-2xl container font-medium md:text-center">
           {" "}
